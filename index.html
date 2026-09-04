@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BihariResult.com - Saurabh Online Seva Kendra</title>
+  
+  <!-- SEO META TAGS -->
+  <title>BihariResult.com - Saurabh Online Seva Kendra Sahasraon</title>
+  <meta name="description" content="BihariResult.com - Saurabh Online Seva Kendra Sahasraon. Get Latest Bihar Jobs, Results, Admit Cards, Admissions, Sarkari Yojana, PAN Card Services, and Government Certificates.">
+  <meta name="keywords" content="Bihari Result, Saurabh Online Seva Kendra, Sahasraon, Bihar Job Updates, RTPS Bihar, Sarkari Yojana, Bhulekh Bihar, PAN Card Apply, Admit Card, Results">
+  <meta name="author" content="Saurabh Kumar Kushwaha">
+  
+  <!-- GOOGLE ADSENSE SCRIPT -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
   <style>
     * {
       box-sizing: border-box;
@@ -14,6 +23,7 @@
 
     body {
       background-color: #f4f4f4;
+      color: #333;
     }
 
     .top-banner {
@@ -32,8 +42,64 @@
       padding: 20px 10px;
     }
 
+    /* BRAND LOGO BADGE FOR BIHARI RESULT */
+    .brand-logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 50px;
+      border: 3px solid #ffcc00;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .logo-text-main {
+      font-size: 26px;
+      font-weight: 900;
+      color: #800000;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'Arial Black', Impact, sans-serif;
+    }
+
+    .logo-text-highlight {
+      background-color: #ffcc00;
+      color: #800000;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-left: 6px;
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    /* Owner Name Style */
+    .owner-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+
+    /* Seva Kendra Tag Badge Style */
+    .seva-badge {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #800000;
+      font-weight: bold;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
     header h1 {
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 5px;
     }
 
@@ -60,6 +126,11 @@
       font-weight: bold;
       color: white;
       font-size: 14px;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .btn-social:hover {
+      opacity: 0.9;
     }
 
     .btn-whatsapp { background-color: #25D366; }
@@ -71,6 +142,9 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 99;
     }
 
     nav a {
@@ -91,13 +165,40 @@
       padding: 0 10px;
     }
 
-    .marquee-text {
-      background-color: #fff3cd;
-      color: #856404;
+    /* Halka Pink Background for Marquee Box */
+    .marquee-container {
+      background-color: #ffe6f0; /* Halka Pink Background */
       padding: 10px;
-      border: 1px solid #ffeeba;
-      font-weight: bold;
+      border: 1px solid #f8b1d4;
+      border-radius: 6px;
       margin-bottom: 20px;
+    }
+
+    /* Light Blue Background for Welcome Text */
+    .welcome-text {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #e6f2ff; /* Halka Nila Background */
+      color: #004085;           /* Deep Blue Text Color */
+      padding: 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      border: 1px solid #b8daff;
+    }
+
+    .moving-line {
+      font-weight: bold;
+      font-size: 15px;
+      margin: 4px 0;
+    }
+
+    .line-left-to-right {
+      color: #008000;
+    }
+
+    .line-right-to-left {
+      color: #cc0000;
     }
 
     /* Grid Layout */
@@ -113,6 +214,7 @@
       border: 2px solid #800000;
       border-radius: 4px;
       overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
     .box-header {
@@ -155,6 +257,23 @@
       font-weight: bold;
     }
 
+    /* ADVERTISEMENT CONTAINER CSS */
+    .ad-slot {
+      text-align: center;
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px dashed #ccc;
+      border-radius: 5px;
+    }
+
+    .banner-img {
+      max-width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
     /* Floating WhatsApp Button */
     .float-wa {
       position: fixed;
@@ -167,7 +286,7 @@
       border-radius: 50px;
       text-align: center;
       font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       z-index: 100;
       display: flex;
       align-items: center;
@@ -180,7 +299,7 @@
       background-color: #800000;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px 15px;
       margin-top: 30px;
       font-size: 14px;
     }
@@ -188,6 +307,15 @@
     footer a {
       color: #ffcc00;
       text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      margin-bottom: 12px;
     }
   </style>
 </head>
@@ -198,6 +326,16 @@
   </div>
 
   <header>
+    <!-- BIHARI RESULT BRAND LOGO BADGE -->
+    <div class="brand-logo-badge">
+      <span class="logo-text-main">BIHARI</span>
+      <span class="logo-text-highlight">RESULT</span>
+    </div>
+    
+    <!-- Owner Name & Seva Kendra Tag -->
+    <div class="owner-name">SAURABH KUMAR KUSHWAHA</div>
+    <div class="seva-badge">✔ HEY 100RABH</div>
+
     <h1>SAURABH ONLINE SEVA KENDRA SAHASRAON</h1>
     <p>YouTube Channel - vlogwithsaurabhh01</p>
     
@@ -215,15 +353,42 @@
     <a href="#results">Results</a>
     <a href="#admit-card">Admit Card</a>
     <a href="#admission">Admission</a>
+    <a href="#sarkari-yojana">Sarkari Yojana</a>
+    <a href="#pan-services">PAN Services</a>
     <a href="#services">Online Seva Services</a>
+    <a href="#useful-tools">Useful Tools</a>
   </nav>
 
   <div class="container">
     
-    <div class="marquee-text">
-      <marquee scrollamount="5">
-        Welcome to Saurabh Online Seva Kendra Sahasraon / BihariResult.com - Any Query Call/WhatsApp: 9153307024
+    <!-- Welcome + Double Moving Text Marquee -->
+    <div class="marquee-container">
+      <div class="welcome-text">
+        WELCOME TO SAURABH ONLINE SEVA KENDRA SAHASRAON (BIHARIRESULT.COM)
+      </div>
+      
+      <!-- Left to Right Move -->
+      <marquee direction="right" scrollamount="6" class="moving-line line-left-to-right">
+        👉 WWW.BIHARIRESULT.COM 🌐 All Bihar Online Services & Fast Job Updates 🌐 WWW.BIHARIRESULT.COM 👈
       </marquee>
+
+      <!-- Right to Left Move -->
+      <marquee direction="left" scrollamount="6" class="moving-line line-right-to-left">
+        🔥 WWW.BIHARIRESULT.COM - Contact/WhatsApp: 9153307024 - Visit Again! 🔥
+      </marquee>
+    </div>
+
+    <!-- TOP ADVERTISEMENT SLOT -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 
     <!-- MAIN SECTION 1 -->
@@ -232,10 +397,17 @@
       <div class="box" id="results">
         <div class="box-header">Results</div>
         <ul>
-          <li><a href="https://bpsc.bih.nic.in/" target="_blank">BPSC Teacher Phase 3 Result <span class="new-tag">NEW</span></a></li>
-          <li><a href="http://biharboardonline.bihar.gov.in/" target="_blank">Bihar Board Class 10th Result</a></li>
+          <li><a href="https://bpsc.bih.nic.in/" target="_blank">BPSC Teacher (TRE) Result <span class="new-tag">NEW</span></a></li>
+          <li><a href="http://biharboardonline.bihar.gov.in/" target="_blank">Bihar Board Class 10th Result <span class="new-tag">HOT</span></a></li>
+          <li><a href="http://biharboardonline.bihar.gov.in/" target="_blank">Bihar Board Class 12th Result</a></li>
           <li><a href="https://csbc.bih.nic.in/" target="_blank">Bihar Police Constable Result</a></li>
-          <li><a href="https://ssc.gov.in/" target="_blank">SSC CGL Tier-I Exam Result</a></li>
+          <li><a href="https://bpssc.bih.nic.in/" target="_blank">Bihar Police SI Result</a></li>
+          <li><a href="https://bssc.bihar.gov.in/" target="_blank">BSSC Inter / CGL Exam Result</a></li>
+          <li><a href="https://deledbihar.com/" target="_blank">Bihar D.El.Ed Entrance Result</a></li>
+          <li><a href="https://ssc.gov.in/" target="_blank">SSC CGL / CHSL / GD Result</a></li>
+          <li><a href="https://www.rrbapply.gov.in/" target="_blank">Railway RRB ALP / NTPC Result</a></li>
+          <li><a href="https://ibps.in/" target="_blank">IBPS PO / Clerk Result</a></li>
+          <li><a href="https://nta.ac.in/" target="_blank">NTA NEET / JEE Main Result</a></li>
         </ul>
       </div>
 
@@ -243,9 +415,15 @@
         <div class="box-header">Admit Card</div>
         <ul>
           <li><a href="https://bpssc.bih.nic.in/" target="_blank">Bihar Police SI Exam Admit Card <span class="new-tag">NEW</span></a></li>
-          <li><a href="https://bssc.bihar.gov.in/" target="_blank">BSSC Inter Level Admit Card</a></li>
-          <li><a href="https://www.rrbapply.gov.in/" target="_blank">Railway RRB NTPC Hall Ticket</a></li>
-          <li><a href="https://ssc.gov.in/" target="_blank">SSC GD Constable Admit Card</a></li>
+          <li><a href="https://csbc.bih.nic.in/" target="_blank">Bihar Police Constable Admit Card <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://bssc.bihar.gov.in/" target="_blank">BSSC Inter Level Exam Admit Card</a></li>
+          <li><a href="https://bpsc.bih.nic.in/" target="_blank">BPSC Teacher / Civil Services Admit Card</a></li>
+          <li><a href="http://biharboardonline.bihar.gov.in/" target="_blank">Bihar Board 10th / 12th Admit Card</a></li>
+          <li><a href="https://deledbihar.com/" target="_blank">Bihar D.El.Ed Entrance Admit Card</a></li>
+          <li><a href="https://ssc.gov.in/" target="_blank">SSC GD / CGL / CHSL Admit Card</a></li>
+          <li><a href="https://www.rrbapply.gov.in/" target="_blank">Railway RRB NTPC / ALP Hall Ticket</a></li>
+          <li><a href="https://ibps.in/" target="_blank">IBPS PO / Clerk Call Letter</a></li>
+          <li><a href="https://nta.ac.in/" target="_blank">NTA NEET / JEE Main Admit Card</a></li>
         </ul>
       </div>
 
@@ -261,25 +439,87 @@
 
     </div>
 
-    <!-- MAIN SECTION 2 (Saurabh Online Seva Important Portals) -->
+    <!-- MIDDLE ADVERTISEMENT BANNER -->
+    <div class="ad-slot">
+      <a href="tel:9153307024">
+        <img src="https://via.placeholder.com/728x90?text=Saurabh+Online+Seva+Kendra+-+Call+9153307024" alt="Saurabh Online Seva Kendra" class="banner-img">
+      </a>
+    </div>
+
+    <!-- MAIN SECTION 2 -->
     <div class="grid-container">
       
       <div class="box" id="admission">
-        <div class="box-header">Admission</div>
+        <div class="box-header">Admission Portals</div>
         <ul>
-          <li><a href="https://biharbedlnmu.in/" target="_blank">Bihar B.Ed Combined Entrance Form</a></li>
-          <li><a href="https://pup.ac.in/" target="_blank">Patna University UG Admission</a></li>
-          <li><a href="https://deledbihar.com/" target="_blank">Bihar D.El.Ed Admission Online</a></li>
+          <li><a href="https://deledbihar.com/" target="_blank">Bihar D.El.Ed Admission Online <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://biharbedlnmu.in/" target="_blank">Bihar B.Ed Combined Entrance Form <span class="new-tag">NEW</span></a></li>
+          <li><a href="https://bceceboard.bihar.gov.in/" target="_blank">BCECEB Bihar ITI / Polytechnic Form <span class="new-tag">NEW</span></a></li>
+          <li><a href="https://www.ofssbihar.org/" target="_blank">OFSS Bihar Inter (11th) Admission</a></li>
+          <li><a href="https://pup.ac.in/" target="_blank">Patna University UG / PG Admission</a></li>
+          <li><a href="https://cuet.nta.nic.in/" target="_blank">NTA CUET UG Entrance Form</a></li>
+          <li><a href="https://cuet.nta.nic.in/" target="_blank">NTA CUET PG Entrance Form</a></li>
+          <li><a href="https://ignouadmission.samarth.edu.in/" target="_blank">IGNOU Distance Admission Portal</a></li>
         </ul>
       </div>
 
+      <div class="box" id="sarkari-yojana">
+        <div class="box-header">Sarkari Yojana (सरकारी योजनाएं)</div>
+        <ul>
+          <li><a href="https://pmkisan.gov.in/" target="_blank">PM Kisan Samman Nidhi Status / KYC <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://beneficiary.nha.gov.in/" target="_blank">Ayushman Bharat Health Card Apply <span class="new-tag">NEW</span></a></li>
+          <li><a href="https://udyamiregistration.bihar.gov.in/" target="_blank">Bihar Mukhyamantri Udyami Yojana</a></li>
+          <li><a href="https://elabharthi.bih.nic.in/" target="_blank">Bihar Pension Scheme (e-Labharthi)</a></li>
+          <li><a href="https://pmsuryaghar.gov.in/" target="_blank">PM Surya Ghar Free Electricity Scheme <span class="new-tag">NEW</span></a></li>
+        </ul>
+      </div>
+
+      <div class="box" id="pan-services">
+        <div class="box-header">PAN Card & Photo Tools</div>
+        <ul>
+          <li><a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">Apply New PAN Card Online (NSDL) <span class="new-tag">NEW</span></a></li>
+          <li><a href="https://www.tin-nsdl.com/" target="_blank">PAN Card Correction / Update (NSDL)</a></li>
+          <li><a href="https://pancardresizer.com/" target="_blank">PAN Card Photo / Signature Resizer Tool <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://eportal.incometax.gov.in/" target="_blank">Instant E-PAN Download / Status Check</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- MAIN SECTION 3 -->
+    <div class="grid-container">
+      
       <div class="box" id="services">
         <div class="box-header">Bihar Online Seva / Certificate</div>
         <ul>
-          <li><a href="https://serviceonline.bihar.gov.in/" target="_blank">RTPS Bihar (Caste / Income / Residence) <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://www.digilocker.gov.in/" target="_blank">DigiLocker Portal Login / Download <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://apaar.education.gov.in/" target="_blank">APAAR ID Card Create / Download <span class="new-tag">NEW</span></a></li>
+          <li><a href="https://eshram.gov.in/" target="_blank">e-Shram Card Registration / Download</a></li>
+          <li><a href="https://abha.abdm.gov.in/" target="_blank">ABHA Health ID Card Apply Online <span class="new-tag">NEW</span></a></li>
+          <li><a href="https://serviceonline.bihar.gov.in/" target="_blank">RTPS Bihar (Caste / Income / Residence)</a></li>
           <li><a href="https://myaadhaar.uidai.gov.in/" target="_blank">Download Aadhaar Card</a></li>
           <li><a href="https://voters.eci.gov.in/" target="_blank">Voter ID Card Online Apply / Download</a></li>
           <li><a href="https://parivahan.gov.in/" target="_blank">Driving License Services</a></li>
+        </ul>
+      </div>
+
+      <div class="box" id="important-portals">
+        <div class="box-header">Important Citizen Portals</div>
+        <ul>
+          <li><a href="https://epfs.bihar.gov.in/" target="_blank">Bihar Ration Card Online Apply / Status <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://biharbhumi.bihar.gov.in/" target="_blank">Bihar Bhulekh / Land Record Search</a></li>
+          <li><a href="https://unifiedportal-mem.epfindia.gov.in/" target="_blank">EPFO UAN / PF Withdrawal Portal</a></li>
+          <li><a href="https://pmsonline.bih.nic.in/" target="_blank">Bihar Post Matric Scholarship Portal <span class="new-tag">NEW</span></a></li>
+        </ul>
+      </div>
+
+      <div class="box" id="useful-tools">
+        <div class="box-header">Important Utility Tools</div>
+        <ul>
+          <li><a href="https://www.ilovepdf.com/compress_pdf" target="_blank">Online PDF Size Compressor <span class="new-tag">HOT</span></a></li>
+          <li><a href="https://tinypng.com/" target="_blank">Image Size Compressor Tool</a></li>
+          <li><a href="https://www.calculator.net/age-calculator.html" target="_blank">Age Calculator (Date of Birth)</a></li>
+          <li><a href="https://www.resume.com/" target="_blank">Online Resume / Bio-Data Maker</a></li>
         </ul>
       </div>
 
@@ -288,9 +528,16 @@
   </div>
 
   <!-- Floating WhatsApp Icon -->
-  <a href="https://wa.me/919153307024" class="float-wa" target="_blank">WA</a>
+  <a href="https://wa.me/919153307024" class="float-wa" target="_blank" title="Chat on WhatsApp">WA</a>
 
   <footer>
+    <div class="footer-links">
+      <a href="#">About Us</a> | 
+      <a href="#">Contact Us</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Disclaimer</a> | 
+      <a href="#">Terms & Conditions</a>
+    </div>
     <p>© 2026 BihariResult.com / Saurabh Online Seva Kendra Sahasraon. All Rights Reserved.</p>
     <p style="margin-top: 5px;">Contact: <a href="tel:9153307024">9153307024</a> | WhatsApp: <a href="https://wa.me/919153307024" target="_blank">9153307024</a></p>
   </footer>
